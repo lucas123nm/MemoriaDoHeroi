@@ -8,11 +8,21 @@
     <link rel="stylesheet" href="css/board.css">
     <link rel="stylesheet" href="css/main.css">
     <!--Scripts-->
-    <script src="scripts/cards.js"></script>
-    <script src="scripts/board.js"></script>
-    <script src="scripts/main.js"></script>
+    <script defer src="scripts/cards.js"></script>
+    <script defer src="scripts/board.js"></script>
+    <script defer src="scripts/main.js"></script>
+    
 </head>
 <body>
+    <template id="cardsTemplate">
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front"></div>
+                <div class="flip-card-back"><img src="images/heros/card01.jpeg" alt=""></div>
+            </div>
+        </div>
+    </template>
+    <div id="board" class="hidden"></div>
     <main id="menu">
         <h1>Memória do herói</h1>
         <div class="container">
